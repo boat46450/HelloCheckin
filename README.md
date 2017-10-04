@@ -21,7 +21,7 @@ $ php artisan key:generate
 2. create database in phpMyAdmin with checkin
 3. change variable in `.env` file
 ```
-DB_DATABASE=checkin
+DB_DATABASE=[your new DB]
 DB_USERNAME=[your username]
 DB_PASSWORD=[your password]
 ```
