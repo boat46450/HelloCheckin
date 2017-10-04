@@ -25,3 +25,11 @@ DB_DATABASE=[your new DB]
 DB_USERNAME=[your username]
 DB_PASSWORD=[your password]
 ```
+4. migrate database by
+```
+php artisan migrate
+```
+5. moke data from seed to database by
+```
+php artisan db:seed
+```
