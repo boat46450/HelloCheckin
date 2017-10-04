@@ -15,6 +15,7 @@ class CheckinsTableSeeder extends Seeder
             'id' => '',
             'name' => '',
             'surname' => '',
+            'code' => '',
             '10-OCT' => false,
             '12-OCT' => false,
             '17-OCT' => false,

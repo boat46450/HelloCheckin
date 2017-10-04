@@ -17,6 +17,7 @@ class CreateCheckinsTable extends Migration
             $table->bigInteger('id')->primary();
             $table->string('name');
             $table->string('surname');
+            $table->string('code');
             $table->boolean('10-OCT');
             $table->boolean('12-OCT');
             $table->boolean('17-OCT');
