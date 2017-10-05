@@ -31,5 +31,5 @@ php artisan migrate
 ```
 5. moke data from seed to database by
 ```
-php artisan db:seed
+php artisan db:seed --class=CheckinsTableSeeder
 ```

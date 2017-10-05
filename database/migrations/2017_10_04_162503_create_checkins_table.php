@@ -14,19 +14,19 @@ class CreateCheckinsTable extends Migration
     public function up()
     {
         Schema::create('checkins', function (Blueprint $table) {
-            $table->bigInteger('id');
+            $table->bigInteger('_id');
             $table->string('name');
             $table->string('surname');
             $table->string('code');
-            $table->boolean('10-OCT');
-            $table->boolean('12-OCT');
-            $table->boolean('17-OCT');
-            $table->boolean('19-OCT');
-            $table->boolean('24-OCT');
-            $table->boolean('26-OCT');
-            $table->boolean('31-OCT');
-            $table->boolean('02-NOV');
-            $table->boolean('06-NOV');
+            $table->boolean('OCT-10');
+            $table->boolean('OCT-12');
+            $table->boolean('OCT-17');
+            $table->boolean('OCT-19');
+            $table->boolean('OCT-24');
+            $table->boolean('OCT-26');
+            $table->boolean('OCT-31');
+            $table->boolean('NOV-02');
+            $table->boolean('NOV-06');
         });
     }
 
