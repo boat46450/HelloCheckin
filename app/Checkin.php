@@ -8,6 +8,6 @@ class Checkin extends Model
 {
     protected $table = 'checkins';
     protected $fillable = [
-        '_id', 'name', 'surname', 'code', 'OCT-10', 'OCT-12', 'OCT-17', 'OCT-19', 'OCT-24', 'OCT-26', 'OCT-31', 'NOV-02', 'NOV-06'
+        '_id', 'name', 'surname', 'code', 'OCT10', 'OCT12', 'OCT17', 'OCT19', 'OCT24', 'OCT26', 'OCT31', 'NOV02', 'NOV06'
     ];
 }
