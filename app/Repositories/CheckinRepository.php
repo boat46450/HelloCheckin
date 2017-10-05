@@ -15,15 +15,15 @@ class CheckinRepository implements CheckinRepositoryInterface {
                 'name' => $response->name,
                 'surname' => $response->surname,
                 'code' => $response->code,
-                '10-OCT' => $response->OCT10,
-                '12-OCT' => $response->OCT12,
-                '17-OCT' => $response->OCT17,
-                '19-OCT' => $response->OCT19,
-                '24-OCT' => $response->OCT24,
-                '26-OCT' => $response->OCT26,
-                '31-OCT' => $response->OCT31,
-                '02-NOV' => $response->NOV02,
-                '06-NOV' => $response->NOV06
+                'OCT10' => $response->OCT10,
+                'OCT12' => $response->OCT12,
+                'OCT17' => $response->OCT17,
+                'OCT19' => $response->OCT19,
+                'OCT24' => $response->OCT24,
+                'OCT26' => $response->OCT26,
+                'OCT31' => $response->OCT31,
+                'NOV02' => $response->NOV02,
+                'NOV06' => $response->NOV06
             ];
 
             array_push($data, $temp);
