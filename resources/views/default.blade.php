@@ -24,5 +24,8 @@
 </head>
 <body>
   @yield('content')
+
+  {{--  Script  --}}
+  @yield('custom_script')
 </body>
 </html>
