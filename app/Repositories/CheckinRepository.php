@@ -20,7 +20,6 @@ class CheckinRepository implements CheckinRepositoryInterface {
                 'OCT17' => $response->OCT17,
                 'OCT19' => $response->OCT19,
                 'OCT24' => $response->OCT24,
-                'OCT26' => $response->OCT26,
                 'OCT31' => $response->OCT31,
                 'NOV02' => $response->NOV02,
                 'NOV06' => $response->NOV06
