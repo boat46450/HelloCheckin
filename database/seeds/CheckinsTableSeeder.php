@@ -26,7 +26,6 @@ class CheckinsTableSeeder extends Seeder
                     'OCT17' => false,
                     'OCT19' => false,
                     'OCT24' => false,
-                    'OCT26' => false,
                     'OCT31' => false,
                     'NOV02' => false,
                     'NOV06' => false,
