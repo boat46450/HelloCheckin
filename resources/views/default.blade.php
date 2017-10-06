@@ -18,7 +18,7 @@
 
   <meta property="og:url" content="{{ url()->current() }}" />
   <meta property="og:type" content="article">
-  <meta property="og:title" content="KMUTT Passport | @yield('title')">
+  <meta property="og:title" content="Hello World Alpaca | @yield('title')">
   
   @yield('custom_head')
 </head>
