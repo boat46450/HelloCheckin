@@ -22,7 +22,6 @@ class CreateCheckinsTable extends Migration
             $table->boolean('OCT17');
             $table->boolean('OCT19');
             $table->boolean('OCT24');
-            $table->boolean('OCT26');
             $table->boolean('OCT31');
             $table->boolean('NOV02');
             $table->boolean('NOV06');
