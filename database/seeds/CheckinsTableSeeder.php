@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
+use Carbon\Carbon;
 
 class CheckinsTableSeeder extends Seeder
 {
@@ -14,8 +15,7 @@ class CheckinsTableSeeder extends Seeder
     {
         DB::table('checkins')->insert([
             '_id' => '59130500069',
-            'name' => 'puripat',
-            'surname' => 'arayasirikul',
+            'name' => 'puripat arayasirikul',
             'code' => '456123',
             'OCT10' => false,
             'OCT12' => false,
@@ -26,21 +26,8 @@ class CheckinsTableSeeder extends Seeder
             'OCT31' => false,
             'NOV02' => false,
             'NOV06' => false,
-        ]);
-        DB::table('checkins')->insert([
-            '_id' => '59130500000',
-            'name' => 'qwe',
-            'surname' => 'zxc',
-            'code' => '456798',
-            'OCT10' => false,
-            'OCT12' => false,
-            'OCT17' => false,
-            'OCT19' => false,
-            'OCT24' => false,
-            'OCT26' => false,
-            'OCT31' => false,
-            'NOV02' => false,
-            'NOV06' => false,
+            'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+            'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
         ]);
     }
 }
