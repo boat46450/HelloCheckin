@@ -1,0 +1,1 @@
+const goback = () => window.history.back();
