@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Repositories\CheckinRepositoryInterface;
 use Excel;
+use Carbon\Carbon;
 
 class CheckinController extends Controller
 {
@@ -18,13 +19,27 @@ class CheckinController extends Controller
         return view('index');
     }
 
-    // function enterCode
+    public function enterCode(Request $request) {
+        $code = $request->code;
+        if($code == 'alpaca')
+            return redirect('/checkin');
+        return redirect('/')->withErrors(['staffCode' => 'wrong staff code']);
+    }
 
     public function checkinPage() {
         return view('checkin');
     }
 
-    // function checkin
+    public function checkin($code) {
+        $date = explode(" ", Carbon::now()->format('m d'));
+        if($date[0] == '10')
+            $date[0] = 'OCT';
+        elseif ($data[0] == '11')
+            $date[0] = 'NOV';
+        
+        $status = $this->checkin->update($code, implode('', $date));
+        return $status;
+    }
 
     public function export() {
         Excel::create('จำนวนครั้งของผู้เข้าร่วมกิจกรรม HelloWorldAlpaca', function($excel) {
@@ -81,7 +96,10 @@ class CheckinController extends Controller
                     array_push(
                         $data,
                         array(
-                            $k+1, $v->id, $v->name . ' ' . $v->surname, $count . ' ครั้ง',
+                            $k+1,
+                            $v->id,
+                            $v->name,
+                            $count . ' ครั้ง',
                             $v->OCT10 == 1? '✓' : '',
                             $v->OCT12 == 1? '✓' : '',
                             $v->OCT17 == 1? '✓' : '',
