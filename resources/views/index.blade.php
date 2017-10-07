@@ -26,9 +26,9 @@
             </div>
             <div class="row">
                 <div class="col-xs-12 text-center">
-                    <button type="button" name="sutmit" class="btn btn-success">Sutmit</button>                    
+                    <button type="button" name="sutmit" class="btn btn-green">Sutmit</button>                    
                     <a href="/export">
-                        <button type="button" class="btn btn-warning export">Export Excel</button>     
+                        <button type="button" class="btn btn-yellow export">Export Excel</button>     
                     </a>          
                 </div>
             </div>

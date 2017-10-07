@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" contents="ie=edge">
-  <title>Hello Checkin</title>
+  <title>Hello Checkin | @yield('title')</title>
 
   {{--  Font  --}}
   <link href="https://fonts.googleapis.com/css?family=Kanit:300,400&amp;subset=latin-ext,thai" rel="stylesheet">
