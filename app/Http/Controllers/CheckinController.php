@@ -79,9 +79,6 @@ class CheckinController extends Controller
                     if($v->OCT24 == 1) {
                         $count++;
                     }
-                    if($v->OCT26 == 1) {
-                        $count++;
-                    }
                     if($v->OCT31 == 1) {
                         $count++;
                     }
