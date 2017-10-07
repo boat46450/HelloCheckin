@@ -4,13 +4,13 @@ scanner.addListener('scan', function($content){
   checkIn($content);
 });
 
-$('#click').click(function() {
-  const ticketId = $('searchTicket').val().toUpperCase();
-  $('searchTicket').val("");
-  checkIn(ticketId);
-});
+// $('#click').click(function() {
+//   const ticketId = $('searchTicket').val().toUpperCase();
+//   $('searchTicket').val("");
+//   checkIn(ticketId);
+// });
 
-Instascan.Camera.getCamera().then(function (cameras) {
+Instascan.Camera.getCameras().then(function (cameras) {
   if(cameras.length > 0) {
     scanner.start(cameras[1] ? cameras[1] : cameras[0]);
   } else {

@@ -1,15 +1,6 @@
-@font-face {
-  font-family: 'QuarkBold';
-  src: url('/fonts/quark-bold/quark-bold.eot');
-  src: url('/fonts/quark-bold/quark-bold.eot') format('embedded-opentype'),
-       url('/fonts/quark-bold/quark-bold.woff') format('woff'),
-       url('/fonts/quark-bold/quark-bold.ttf') format('truetype'),
-       url('/fonts/quark-bold/quark-bold.svg#QuarkBold') format('svg');
-}
-
 body {
   background-color: #efefef;
-  font-family: 'QuarkBold', 'Prompt', 'sans-serif';
+  font-family: 'Prompt', 'sans-serif';
   font-size: 20pt;
 }
 

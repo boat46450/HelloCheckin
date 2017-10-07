@@ -5,7 +5,7 @@
 @endsection
 
 @section('custom_head')
-  <link rel="stylesheet" href="/css/checkinStyle" type="text/css">
+  <link rel="stylesheet" href="/css/checkinStyle.css" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
 @endsection
 
