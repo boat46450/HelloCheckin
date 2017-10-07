@@ -19,6 +19,10 @@
   <meta property="og:url" content="{{ url()->current() }}" />
   <meta property="og:type" content="article">
   <meta property="og:title" content="Hello World Alpaca | @yield('title')">
+  <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
   
   @yield('custom_head')
 </head>

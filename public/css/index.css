@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "IntrudingCat";
+    src: url("/fonts/IntrudingCat.otf"); 
+}
+
+body{
+    background-image: url("/img/bg3.png");
+    /* เดี๋ยวมาเปลี่ยน background  */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #caf3ff;
+    font-family: 'IntrudingCat' ,sans-serif;
+    margin-top: 20vh;
+}
+
+.container{
+    /* position: relative;
+    top:0;
+    bottom: 0; */
+    /* min-height: 92vh; */
+}
+
+.text-head{
+    font-size: 5em;
+    color: #2054a8;
+    text-shadow: 2px 2px #6ca8ff;
+}
+
+.pass-field{
+    width: 100%;
+    border-radius: 15px;
+    border: solid 1.2px #000;
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 5px 0 25px 0;
+}
+
+.btn{
+    font-size: 22px;
+    border-radius: 30px;
+    padding: 5px 20px;
+}
