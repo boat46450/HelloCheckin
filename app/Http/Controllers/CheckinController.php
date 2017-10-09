@@ -38,7 +38,6 @@ class CheckinController extends Controller
             $date[0] = 'NOV';
         
         $status = $this->checkin->update($code, implode('', $date));
-        dd($status);
         return $status;
     }
 

@@ -29,5 +29,6 @@
 
 @section('custom_script')
   <script type="text/javascript" src="/js/instascan.min.js"></script>
+  <script type="text/javascript" src="/js/sweetalert.min.js"></script>
   <script type="text/javascript" src="/js/checkinQrScan.js"></script>
 @endsection

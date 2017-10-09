@@ -16,5 +16,3 @@ Route::post('/', 'CheckinController@enterCode');
 Route::get('/checkin', 'CheckinController@checkinPage');
 Route::get('/checkin/{code}', 'CheckinController@checkin');
 Route::get('/export', 'CheckinController@export');
-
-Route::get('/test', 'CheckinController@test');
