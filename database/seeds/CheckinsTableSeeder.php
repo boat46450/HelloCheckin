@@ -21,6 +21,7 @@ class CheckinsTableSeeder extends Seeder
                     '_id' => $r['student_id'],
                     'name' => $r['name_surname'],
                     'code' => $r['ticketno'],
+                    'OCT09' => false,
                     'OCT10' => false,
                     'OCT12' => false,
                     'OCT17' => false,

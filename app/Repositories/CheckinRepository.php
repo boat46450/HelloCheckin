@@ -3,6 +3,7 @@
 namespace App\Repositories;
 
 use App\Checkin;
+use Illuminate\Database\QueryException;
 
 class CheckinRepository implements CheckinRepositoryInterface {
 
@@ -31,10 +32,15 @@ class CheckinRepository implements CheckinRepositoryInterface {
     }
 
     public function update($code, $date) {
-        $responses = Checkin::where('code', $code)->update([$date => true]);
-        if ($responses == 1)
-            return 100;
-        else
+        try {
+            $responses = Checkin::where('code', $code)->update([$date => true]);
+            if($responses == 1)
+                return 100;
+            else
+                return 400;
+        }
+        catch(QueryException $e) {
             return 400;
+        }
     }
 }
