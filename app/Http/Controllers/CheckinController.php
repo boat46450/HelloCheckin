@@ -52,6 +52,7 @@ class CheckinController extends Controller
                         'รหัสนักศึกษา',
                         'ชื่อ-นามสกุล',
                         'จำนวนครั้ง',
+                        '9 ตุลาคม 2560',
                         '10 ตุลาคม 2560',
                         '12 ตุลาคม 2560',
                         '17 ตุลาคม 2560',
@@ -64,6 +65,9 @@ class CheckinController extends Controller
                 $checkins = $this->checkin->get();
                 foreach ($checkins as $k => $v) {
                     $count = 0;
+                    if($v->OCT09 == 1) {
+                        $count++;
+                    }
                     if($v->OCT10 == 1) {
                         $count++;
                     }
@@ -96,6 +100,7 @@ class CheckinController extends Controller
                             $v->id,
                             $v->name,
                             $count . ' ครั้ง',
+                            $v->OCT09 == 1? '✓' : '',
                             $v->OCT10 == 1? '✓' : '',
                             $v->OCT12 == 1? '✓' : '',
                             $v->OCT17 == 1? '✓' : '',

@@ -17,6 +17,7 @@ class CreateCheckinsTable extends Migration
             $table->string('_id');
             $table->string('name');
             $table->string('code');
+            $table->boolean('OCT09');
             $table->boolean('OCT10');
             $table->boolean('OCT12');
             $table->boolean('OCT17');
