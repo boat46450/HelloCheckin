@@ -16,34 +16,21 @@
                     <h1 class="text-head">Check in</h1> 
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-offset-4 col-sm-4 col-md-offset-4 col-md-4 col-lg-offset-4 col-lg-4 text-center">
-                    <form action="/checkin/{code}" method="post" id="form">
+            <form action="/" method="post" id="form">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-offset-4 col-sm-4 col-md-offset-4 col-md-4 col-lg-offset-4 col-lg-4 text-center">
                         {{ csrf_field() }}
                         <input class="pass-field" type="text" name="code" id="code" maxlength="6" pattern="[A-Za-z0-9]{6}">
-                      </form>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 text-center">
-                    <button type="button" name="sutmit" class="btn btn-success">Sutmit</button>                    
-                    <a href="/export">
-                        <button type="button" class="btn btn-warning export">Export Excel</button>     
-                    </a>          
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <input type="submit" value="Submit" class="btn btn-green"> 
+                        <a href="/export">
+                            <button type="button" class="btn btn-yellow export">Export Excel</button>    
+                        </a>          
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 text-center">
-                </div>
-            </div>
+            </form>
         </div>
-@endsection
-
-@section('custom_script')
-  {{--  <script>
-    @if($errors->first('staffCode'))
-      swal("เกิดข้อผิดพลาด", "คุณใส่รหัสผ่านผิด กรุณาลองอีกครั้ง", "error");
-    @endif
-  </script>  --}}
-  
 @endsection

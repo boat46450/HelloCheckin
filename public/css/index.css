@@ -5,19 +5,15 @@
 
 body{
     background-image: url("/img/bg3.png");
-    /* เดี๋ยวมาเปลี่ยน background  */
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #caf3ff;
     font-family: 'IntrudingCat' ,sans-serif;
-    margin-top: 20vh;
-}
-
-.container{
-    /* position: relative;
-    top:0;
-    bottom: 0; */
-    /* min-height: 92vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 90vh;
 }
 
 .text-head{
@@ -40,4 +36,21 @@ body{
     font-size: 22px;
     border-radius: 30px;
     padding: 5px 20px;
+    color:#364166;
+}
+
+.btn-green{
+    background-color: #44f50d;
+}
+
+.btn-yellow{
+    background-color: #edff00;
+}
+
+@media only screen and (max-width:780px){
+    body{
+        background-size: contain;
+        background-position-y: center;
+
+    }
 }
