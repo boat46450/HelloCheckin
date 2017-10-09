@@ -34,10 +34,11 @@ class CheckinController extends Controller
         $date = explode(" ", Carbon::now()->format('m d'));
         if($date[0] == '10')
             $date[0] = 'OCT';
-        elseif ($data[0] == '11')
+        else if ($data[0] == '11')
             $date[0] = 'NOV';
         
         $status = $this->checkin->update($code, implode('', $date));
+        dd($status);
         return $status;
     }
 
