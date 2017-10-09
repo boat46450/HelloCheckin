@@ -16,6 +16,7 @@ class CheckinRepository implements CheckinRepositoryInterface {
                 'name' => $response->name,
                 'surname' => $response->surname,
                 'code' => $response->code,
+                'OCT09' => $response->OCT09,
                 'OCT10' => $response->OCT10,
                 'OCT12' => $response->OCT12,
                 'OCT17' => $response->OCT17,
