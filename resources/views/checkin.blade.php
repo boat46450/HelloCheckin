@@ -18,6 +18,7 @@
       <div  class="col-xs-offset-1 col-xs-10 no-padding">
         <div class="size-camera" id="camera">
           <div class="container-fluid">
+            <br>
             <video id="qrscan"></video>
           </div>
         </div>

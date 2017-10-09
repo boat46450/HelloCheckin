@@ -1,5 +1,7 @@
 body {
-  background-color: #efefef;
+  background-image: url(/img/bg3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   font-family: 'Prompt', 'sans-serif';
   font-size: 20pt;
 }
