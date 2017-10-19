@@ -41,6 +41,15 @@ class CheckinController extends Controller
         return $status;
     }
 
+    public function checkinPagePre() {
+        return view('checkin-pre');
+    }
+
+    public function checkinPre($code) {
+        $status = $this->checkin->update($code, 'OCT17');
+        return $status;
+    }
+
     public function export() {
         Excel::create('จำนวนครั้งของผู้เข้าร่วมกิจกรรม HelloWorldAlpaca', function($excel) {
             $excel->sheet('Sheet1', function($sheet) {

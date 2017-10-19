@@ -15,4 +15,8 @@ Route::get('/', 'CheckinController@index');
 Route::post('/', 'CheckinController@enterCode');
 Route::get('/checkin', 'CheckinController@checkinPage');
 Route::get('/checkin/{code}', 'CheckinController@checkin');
+
+Route::get('/checkin-pre', 'CheckinController@checkinPagePre');
+Route::get('/checkin-pre/{code}', 'CheckinController@checkinPre');
+
 Route::get('/export', 'CheckinController@export');
